@@ -1,0 +1,60 @@
+---
+import { Image } from 'astro:assets';
+import dsensBooksImg from '../img/books.png';
+import NordicBorder from './ui/NordicBorder.astro';
+---
+<section id="projects" class="min-h-screen flex items-center justify-center py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-center text-nordic-gold">Legendary Quests</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <NordicBorder class="quest-card">
+                <div class="quest-image"><Image src={dsensBooksImg} alt="HyperCube artifact"></div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-nordic-gold">HyperCube</h3>
+                    <p class="text-nordic-silver/80 mb-4">HyperCube was a SaaS designed for a famous consulting firm's consultants, its purpose was to provide a set of AI driven Analytics tools out of the box.<br><br>I started my engineering journey on this project as a junior Cloud engineer and ended up working on the AWS related features within its backend, that was the main starting point of my software engineering path.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="rune-tag">Node.js</span>
+                        <span class="rune-tag">Express.js</span>
+                        <span class="rune-tag">Python</span>
+                        <span class="rune-tag">Redis</span>
+                        <span class="rune-tag">MongoDB</span>
+                        <span class="rune-tag">AWS</span>
+                        <span class="rune-tag">Docker</span>
+                    </div>
+                </div>
+            </NordicBorder>
+            <NordicBorder class="quest-card">
+                <div class="quest-image"><Image src={dsensBooksImg} alt="DemandSens Books artifact"></div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-nordic-gold">DemandSens Books</h3>
+                    <p class="text-nordic-silver/80 mb-4">A demand planning SaaS tailored for the book industry, driven by the power of AI magic and ancient software engineering expertise.
+                        <br><br>
+                        As one of the select software engineers on this project, I took on roles from fullstack development to cloud engineering, striving to deliver cutting-edge code while ensuring high-quality, compliant features.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="rune-tag">Nestjs</span>
+                        <span class="rune-tag">Python</span>
+                        <span class="rune-tag">Redis</span>
+                        <span class="rune-tag">PostgreSQL</span>
+                        <span class="rune-tag">AWS</span>
+                        <span class="rune-tag">Docker</span>
+                        <span class="rune-tag">Podman</span>
+                        <span class="rune-tag">Nx</span>
+                    </div>
+                </div>
+            </NordicBorder>
+        </div>
+    </div>
+</section>
+
+<style>
+    .quest-card {
+        @apply bg-nordic-dark/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300;
+    }
+    .quest-image {
+        @apply h-48 bg-nordic-accent/20 rounded-sm;
+        background-image: linear-gradient(45deg, var(--nordic-dark) 0%, var(--nordic-accent) 100%);
+    }
+    .rune-tag {
+        @apply bg-nordic-accent/20 text-nordic-gold text-sm px-3 py-1 border border-nordic-gold/30;
+    }
+</style>

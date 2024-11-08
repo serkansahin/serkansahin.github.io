@@ -1,0 +1,8 @@
+# dist temp files
+dist/
+
+# node modules
+node_modules/
+
+# astro related files
+.astro/

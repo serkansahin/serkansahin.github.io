@@ -1,0 +1,40 @@
+---
+import NordicBorder from './ui/NordicBorder.astro';
+---
+<section id="about" class="min-h-screen flex items-center justify-center py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold mb-8 text-center text-nordic-gold">Tale of the Developer</h2>
+        <NordicBorder class="p-8 bg-nordic-dark/50 backdrop-blur-sm">
+            <p class="text-nordic-silver mb-6 text-lg">
+                A wanderer in the realm of code, I forge digital solutions with the precision of a master craftsman.
+                My journey spans the lands of Backend and SRE, wielding modern technologies as my tools of trade.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+                <div class="skill-card">
+                    <div class="rune">🛡️</div>
+                    <h3 class="text-nordic-gold font-bold">Backend</h3>
+                    <p class="text-sm text-nordic-silver/80">Node.js/Express, Python</p>
+                </div>
+                <div class="skill-card">
+                    <div class="rune">⚒️</div>
+                    <h3 class="text-nordic-gold font-bold">DevOps</h3>
+                    <p class="text-sm text-nordic-silver/80">Docker, Podman, AWS, CI/CD, Shell scripting</p>
+                </div>
+                <div class="skill-card">
+                    <div class="rune">📜</div>
+                    <h3 class="text-nordic-gold font-bold">Database</h3>
+                    <p class="text-sm text-nordic-silver/80">PostgreSQL, MongoDB, Redis, Athena, AWS SQS</p>
+                </div>
+            </div>
+        </NordicBorder>
+    </div>
+</section>
+
+<style>
+    .skill-card {
+        @apply p-4 text-center border border-nordic-gold/30 hover:border-nordic-gold transition-colors duration-300;
+    }
+    .rune {
+        @apply text-3xl mb-2;
+    }
+</style>
